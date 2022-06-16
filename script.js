@@ -2,8 +2,6 @@ let Age = 23
 let iAmHuman = true
 let birthday = "Novembro"
 let Name = "Luiz"
-let NameFirstLetter = "L"
-let NameLenght = 4
 
 if( Age >= 18 ){
     console.log('É maior de idade')
@@ -23,14 +21,16 @@ if( birthday == "Janeiro" || birthday == "Dezembro" ){
     console.log('Não é seu aniversário')
 }
 
-if( NameFirstLetter == "R" ){
-    console.log('Começa pela letra R')
-} else{
-    console.log('Não começa pela letra R')
+if (Name.substring(0, 1) === "R"){
+    console.log('verdade')
+}else {
+    console.log('mentira tem perna curta')
 }
 
-if( NameLenght > 6 || NameFirstLetter == "E" ){
-    console.log('OK')
-} else{
-    console.log('Acesso Negado')
+if (Name.length > 6 || Name.substring(0, 1) === "E"){
+    console.log('verdade')
+}else {
+    console.log('nenhuma das condições se aplica')
 }
+
+
