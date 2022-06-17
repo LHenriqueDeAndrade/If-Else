@@ -9,10 +9,10 @@ if( Age >= 18 ){
     console.log('Não é maior de idade')
 }
 
-if( iAmHuman == true ){
-    console.log('Sou Humano')
+if( Age >= 18 && iAmHuman === true ){
+    console.log('Tenho mais de 18 anos e Sou humano')
 }else{
-    console.log('não sou humano, sou um robô roubando dados kk')
+    console.log('Não é maior de idade ou não é humano, é um robô roubando dados kk')
 }
 
 if( birthday == "Janeiro" || birthday == "Dezembro" ){
